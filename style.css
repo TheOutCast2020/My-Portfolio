@@ -40,6 +40,10 @@ p{
     line-height: 23px;
 }
 
+h2,h1,p,.logo {
+    cursor: default;
+}
+
 .container{
     display: flex;
     justify-content: center;
@@ -65,18 +69,26 @@ p{
     margin-top: -10px;
 }
 
-ul.nav-links{
+.nav-links{
     margin: 0;
     float: right;
     display: flex;
     list-style: none;
 }
 
-li.nav-link{
+.nav-link{
     display: inline-block;
     margin-left: 30px;
     font-size: 17px;
     font-weight: 300;
+}
+
+.nav-link {
+    transition: transform 0.3s ease;
+}
+
+:hover.nav-link {
+    transform: scale(1.2);
 }
 
 .content{
@@ -161,6 +173,15 @@ ul.Project-list {
 .project-img {
     width: 20vw;
     height: 40vh;
+}
+
+.Project {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+:hover.Project {
+    transform: scale(1.2);
 }
 
 @media screen and (max-width: 1075px){
